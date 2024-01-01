@@ -4,13 +4,11 @@ const btn3 = document.querySelector('.btn3');
 const img = document.querySelector('img');
 const btnReset = document.querySelector('.btn-reset');
 
-
 btnReset.addEventListener('click', ()=>{
   return img.src = 'img/common.webp';
 });
 
 btn1.addEventListener('click', ()=>{
-// img.src= 'img/messi2.webp';
 const messi = ['img/messi1.webp', 'img/messi2.webp', 'img/messi3.webp', 'img/messi4.webp', 'img/messi5.jpeg'];
 const randomMessiIndex = Math.floor(Math.random()* messi.length);
 const messirand = messi[randomMessiIndex];
@@ -24,7 +22,6 @@ btn2.addEventListener('click', ()=>{
   const ronaldoRand = ronaldo[ronaldoIndex];
   const ronaldoRandom = img.src = ronaldoRand;
   return ronaldoRandom;
-
 });
 
 btn3.addEventListener('click', ()=>{
